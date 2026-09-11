@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kinetix Reviews · Yantrika - a robotics community in VCET college</title>
+  <meta name="description" content="Read student reviews about the college. Vault access required.">
+  <link rel="icon" href="images/whitelogo.jpg">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    /* safety net: if theme.js ever fails, still reveal the page */
+    setTimeout(function () {
+      document.body.classList.add("booted");
+      var p = document.getElementById("preloader");
+      if (p) p.remove();
+    }, 4000);
+  </script>
+</head>
+<body class="page-reviews">
+
+  <!-- ================= BOOT / PRELOADER ================= -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="pre-inner">
+      <svg class="pre-eyes" viewBox="0 0 140 56" aria-hidden="true">
+        <img src="images/best.png" alt="" style="height: 250px; width:250px;">
+      </svg>
+      <div class="pre-logo">YANTRIKA</div>
+      <div class="pre-track"><div class="pre-fill" id="preFill"></div></div>
+      <div class="pre-meta"><span id="prePct">0%</span><span id="preLog">BNL OS v8.1 — booting…</span></div>
+    </div>
+  </div>
+
+  <!-- scroll charge bar -->
+  <div class="charge-bar" aria-hidden="true"><div class="charge-fill" id="chargeFill"></div></div>
+
+  <!-- custom cursor -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= TOP BAR ================= -->
+  <header class="topbar" id="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html" data-magnetic>
+        <span class="brand-eye" aria-hidden="true">
+          
+            <img src="images/best.png" alt="">
+          
+        </span>
+        <span class="brand-text">YANTRIKA</span>
+        <span class="brand-tag">BNL·EDU</span>
+      </a>
+      <nav class="topnav">
+        <a class="nav-link" href="index.html" data-magnetic>
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+          SUBMIT FEEDBACK
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container-x">
+
+    <!-- ============================================
+         STEP 1: Password gate (shown first)
+         ============================================ -->
+    <section class="card gate-card hud" id="passwordGate">
+      <div class="auto-eye" aria-hidden="true" title="AUTO is watching">
+        <span class="auto-ring"></span><span class="auto-dot"></span>
+      </div>
+      <div class="gate-robot" aria-hidden="true">
+        <img src="images/best.png" alt="" style="height: 200px; width: 200px;">
+      </div>
+      <h1 class="gate-title">KINETIX REVIEWS</h1>
+      <p class="gate-subtitle">Axiom vault detected. Enter the access code to continue.</p>
+
+      <form id="passwordForm" class="gate-form" novalidate>
+        <div class="gate-input-wrap">
+          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+          <input type="password" id="passwordInput" placeholder="ACCESS CODE" autocomplete="off">
+        </div>
+        <button type="submit" class="btn btn-primary">OPEN VAULT</button>
+      </form>
+
+      <!-- Shown when the password is wrong -->
+      <p class="alert alert-error gate-error" id="passwordError" hidden>Incorrect access code. AUTO is unimpressed.</p>
+
+      <p class="gate-hint">Demo password: <strong>123</strong> · change it in <code>script.js</code></p>
+      <p class="gate-hint dim-note">Basic protection only — see the security note in README.md</p>
+    </section>
+
+    <!-- ============================================
+         STEP 2: Reviews (hidden until password OK)
+         ============================================ -->
+    <section id="reviewsSection" hidden>
+
+      <div class="reviews-heading sec-head">
+        <span class="sec-label scramble" data-text="THE VAULT">// THE VAULT</span>
+        <h1 class="sec-title">KINETIX <span class="accent">REVIEWS.</span></h1>
+        <p class="sec-sub">What students are saying about our college.</p>
+      </div>
+
+      <div class="demo-banner" id="demoBanner" hidden>
+        <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 2 2 7l10 5 10-5zM2 17l10 5 10-5M2 12l10 5 10-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+        DEMO MODE · showing sample data — paste your Google Apps Script URL into <code>CONFIG</code> in <code>script.js</code> to go live
+      </div>
+
+      <!-- ===== Statistics ===== -->
+      <section class="card stats-card hud" data-reveal>
+        <div class="hud-head" aria-hidden="true">
+          <span class="hud-dots"><i></i><i></i><i></i></span>
+          <span class="hud-title">AXIOM_DIAGNOSTICS</span>
+          <span class="hud-chip">LIVE</span>
+        </div>
+        <div class="stats-grid">
+          <div class="stat">
+            <div class="stat-num" id="statTotal">–</div>
+            <div class="stat-label">Total Reviews</div>
+          </div>
+          <div class="stat">
+            <div class="stat-num"><span id="statAverage">–</span> <span class="star-inline">★</span></div>
+            <div class="stat-label">Average Rating</div>
+          </div>
+        </div>
+        <div class="breakdown">
+          <div class="b-row"><span>5 stars</span><div class="bar-track"><div class="bar-fill" id="bar5"></div></div><span class="b-count" id="count5">0</span></div>
+          <div class="b-row"><span>4 stars</span><div class="bar-track"><div class="bar-fill" id="bar4"></div></div><span class="b-count" id="count4">0</span></div>
+          <div class="b-row"><span>3 stars</span><div class="bar-track"><div class="bar-fill" id="bar3"></div></div><span class="b-count" id="count3">0</span></div>
+          <div class="b-row"><span>2 stars</span><div class="bar-track"><div class="bar-fill" id="bar2"></div></div><span class="b-count" id="count2">0</span></div>
+          <div class="b-row"><span>1 star</span><div class="bar-track"><div class="bar-fill" id="bar1"></div></div><span class="b-count" id="count1">0</span></div>
+        </div>
+      </section>
+
+      <!-- ===== Filters ===== -->
+      <div class="filters">
+        <div class="filter-field">
+          <label for="sourceFilter">SOURCE</label>
+          <select id="sourceFilter">
+            <option value="general" selected>General feedback</option>
+            <option value="bot">Bot feedback</option>
+          </select>
+        </div>
+        <div class="filter-field" id="botFilterWrap" hidden>
+          <label for="botFilter">BOT</label>
+          <select id="botFilter">
+            <option value="All" selected>All</option>
+            <option value="Line Follower">Line Follower</option>
+            <option value="Soccer Bot">Soccer Bot</option>
+            <option value="Fire Bird">Fire Bird</option>
+            <option value="Yasaka">Yasaka</option>
+            <option value="Duckietown">Duckietown</option>
+            <option value="Maze Solver">Maze Solver</option>
+            <option value="RC Bot">RC Bot</option>
+            <option value="Dex Arms 3-Piece">Dex Arms 3-Piece</option>
+            <option value="Robotic Arm">Robotic Arm</option>
+            <option value="Self-Balancing Bot">Self-Balancing Bot</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="branchFilter">BRANCH</label>
+          <select id="branchFilter">
+            <option value="All" selected>All</option>
+            <option value="CSE">CSE</option>
+            <option value="ECE">ECE</option>
+            <option value="COMPS">COMPS</option>
+            <option value="Mechanical">Mechanical</option>
+            <option value="Civil">Civil</option>
+            <option value="Electrical">Electrical</option>
+            <option value="IT">IT</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        <div class="filter-field">
+          <label for="ratingFilter">RATING</label>
+          <select id="ratingFilter">
+            <option value="All" selected>All</option>
+            <option value="5">5 stars</option>
+            <option value="4">4 stars</option>
+            <option value="3">3 stars</option>
+            <option value="2">2 stars</option>
+            <option value="1">1 star</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- ===== Review cards ===== -->
+      <p class="loading" id="loadingText">Loading reviews…</p>
+      <p class="empty-state" id="emptyState" hidden>
+        <svg class="sad-bot" viewBox="0 0 360 412" aria-hidden="true"><rect x="76" y="318" width="94" height="68" rx="30" fill="#2a3140"/><rect x="190" y="318" width="94" height="68" rx="30" fill="#2a3140"/><rect x="98" y="150" width="164" height="172" rx="12" fill="#c26f2a"/><rect x="108" y="58" width="144" height="66" rx="14" fill="#c9bfa8"/><rect x="120" y="70" width="56" height="48" rx="11" fill="#8f8672"/><rect x="184" y="70" width="56" height="48" rx="11" fill="#8f8672"/><circle cx="148" cy="94" r="15" fill="#0d1118"/><circle cx="212" cy="94" r="15" fill="#0d1118"/><g fill="#67e3ff" opacity=".85"><rect x="118" y="96" width="16" height="4" rx="2" transform="rotate(14 118 96)"/><rect x="226" y="96" width="16" height="4" rx="2" transform="rotate(-14 226 96)"/></g><path d="M156 102 q-8 8 0 14 M204 102 q8 8 0 14" stroke="#0d1118" stroke-width="4" fill="none" stroke-linecap="round"/></svg>
+        No reviews yet. Be the first to share your feedback!
+      </p>
+      <div class="reviews-grid" id="reviewsGrid"></div>
+
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p class="foot-line">Yantrika - a robotics community in VCET college </p>
+    <p class="foot-sub">Made with <span class="heart">♥</span> on Earth · Hand-holding robots since 2019 · <span class="a113">A113</span></p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+  <script src="theme.js" defer></script>
+</body>
+</html>

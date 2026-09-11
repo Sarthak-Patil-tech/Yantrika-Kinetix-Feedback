@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yantrika - a robotics community in VCET college · Directive: Feedback</title>
+  <meta name="description" content="Share your feedback about your college experience. WALL-E approved.">
+  <link rel="icon" href="images/whitelogo.jpg">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    /* safety net: if theme.js ever fails, still reveal the page */
+    setTimeout(function () {  
+      document.body.classList.add("booted");
+      var p = document.getElementById("preloader");
+      if (p) p.remove();
+    }, 4000);
+  </script>
+</head>
+<body class="page-home">
+
+  <!-- ================= BOOT / PRELOADER ================= -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="pre-inner">
+      <svg class="pre-eyes" viewBox="0 0 140 56" aria-hidden="true">
+        <img src="images/best.png" alt="" style="height: px; width: 250px; ">
+      </svg>
+      <div class="pre-logo">YANTRIKA</div>
+      <div class="pre-track"><div class="pre-fill" id="preFill"></div></div>
+      <div class="pre-meta"><span id="prePct">0%</span><span id="preLog">BNL OS v8.1 — booting…</span></div>
+    </div>
+  </div>
+
+  <!-- scroll charge bar -->
+  <div class="charge-bar" aria-hidden="true"><div class="charge-fill" id="chargeFill"></div></div>
+
+  <!-- custom cursor -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= TOP BAR ================= -->
+  <header class="topbar" id="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html" data-magnetic>
+        <span class="brand-eye" aria-hidden="true">
+         <img src="images/best.png" alt="">
+        </span>
+        <span class="brand-text">YANTRIKA</span>
+        <span class="brand-tag">BNL·EDU</span>
+      </a>
+      <nav class="topnav">
+        <a class="nav-link" href="botfeed.html" data-magnetic>
+          BOT FEEDBACK
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+        <a class="nav-link" href="reviews.html" data-magnetic>
+          SEE REVIEWS
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="stars stars-1"></div>
+        <div class="stars stars-2"></div>
+        <div class="hero-glow hero-glow-a"></div>
+        <div class="hero-glow hero-glow-b"></div>
+        <div class="hero-horizon"></div>
+        <svg class="sparkle sp-1" viewBox="0 0 24 24"><path d="M12 0l2.4 9.6L24 12l-9.6 2.4L12 24l-2.4-9.6L0 12l9.6-2.4z" fill="#9df1ff"/></svg>
+        <svg class="sparkle sp-2" viewBox="0 0 24 24"><path d="M12 0l2.4 9.6L24 12l-9.6 2.4L12 24l-2.4-9.6L0 12l9.6-2.4z" fill="#ffd66e"/></svg>
+        <svg class="sparkle sp-3" viewBox="0 0 24 24"><path d="M12 0l2.4 9.6L24 12l-9.6 2.4L12 24l-2.4-9.6L0 12l9.6-2.4z" fill="#f2ecdd"/></svg>
+        <i class="dust d-1"></i><i class="dust d-2"></i><i class="dust d-3"></i>
+        <i class="dust d-4"></i><i class="dust d-5"></i><i class="dust d-6"></i>
+      </div>
+
+      <div class="hero-grid container-x">
+
+        <!-- copy -->
+        <div class="hero-copy">
+          <span class="badge scramble" data-text="STUDENT FEEDBACK PORTAL">// STUDENT FEEDBACK PORTAL</span>
+          <h1 class="hero-title">
+            <span class="line" style="--i:0"><span class="l-inner">YOUR</span></span>
+            <span class="line" style="--i:1"><span class="l-inner accent">VOICE</span></span>
+            <span class="line" style="--i:2"><span class="l-inner accent">SHAPES OUR</span></span>
+            <span class="line" style="--i:3"><span class="l-inner">CAMPUS<svg class="title-star" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.4 9.6L24 12l-9.6 2.4L12 24l-2.4-9.6L0 12l9.6-2.4z" fill="currentColor"/></svg></span></span>
+          </h1>
+          <p class="hero-text boot-fade" style="--bd:.55s">
+            WALL-E spent <strong>700 years</strong> cleaning up Earth. You only need <strong>one minute</strong> —
+            rate your experience, drop honest feedback, and help steer this campus
+            back on course. Every transmission is read.
+          </p>
+          <div class="hero-cta boot-fade" style="--bd:.7s">
+            <a href="botfeed.html" class="btn btn-primary btn-big" data-magnetic>
+              RATE THE FLEET
+              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+            </a>
+            <a href="#console" class="btn btn-ghost btn-big" data-magnetic>QUICK FEEDBACK</a>
+            <a href="reviews.html" class="btn btn-ghost btn-big" data-magnetic>READ REVIEWS</a>
+          </div>
+          <div class="hero-meta boot-fade" style="--bd:.85s">
+            <span class="chip"><svg viewBox="0 0 24 24"><path d="M21.8 10A10 10 0 1 1 17 3.34" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="m9 11 3 3L22 4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Every review is read</span>
+            <span class="chip"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 11-13h-7z" fill="currentColor"/></svg>Powered by Google Sheets</span>
+            <span class="chip"><svg viewBox="0 0 24 24"><rect x="4" y="7" width="16" height="10" rx="4" fill="none" stroke="currentColor" stroke-width="2.2"/><circle cx="9" cy="12" r="1.6" fill="currentColor"/><circle cx="15" cy="12" r="1.6" fill="currentColor"/></svg>Robot approved</span>
+          </div>
+        </div>
+
+        <!-- robot stage -->
+        <div class="hero-stage" id="heroStage" aria-hidden="true">
+          <div class="stage-glow"></div>
+
+          <!-- ============ WALL-E ============ -->
+          <div class="walle" id="walleBot" data-parallax="18" role="button" tabindex="0" aria-label="WALL-E robot">
+            <svg viewBox="0 0 360 412" class="walle-svg">
+              <defs>
+                <linearGradient id="wRust" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#e0913f"/><stop offset=".55" stop-color="#c26f2a"/><stop offset="1" stop-color="#96511b"/>
+                </linearGradient>
+                <linearGradient id="wHead" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#ddd3bd"/><stop offset="1" stop-color="#a99e86"/>
+                </linearGradient>
+                <linearGradient id="wTread" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#3a4150"/><stop offset="1" stop-color="#171b24"/>
+                </linearGradient>
+                <radialGradient id="wPlant">
+                  <stop offset="0" stop-color="#8df0b5" stop-opacity=".55"/><stop offset="1" stop-color="#8df0b5" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+
+              <g class="w-bot">
+                <!-- left arm -->
+                <g class="arm-wrap"><g class="arm arm-l">
+                  <rect x="56" y="166" width="40" height="52" rx="9" fill="url(#wHead)" stroke="#565040" stroke-width="2.5"/>
+                  <rect x="64" y="212" width="26" height="56" rx="7" fill="#c8bda2" stroke="#565040" stroke-width="2.5"/>
+                  <path d="M58 264 h38 l-6 16 h-26 z" fill="#b3a789" stroke="#565040" stroke-width="2.5"/>
+                  <rect x="63" y="280" width="6" height="12" rx="2" fill="#8f8468"/>
+                  <rect x="73" y="280" width="6" height="12" rx="2" fill="#8f8468"/>
+                  <rect x="83" y="280" width="6" height="12" rx="2" fill="#8f8468"/>
+                </g></g>
+                <!-- right arm (mirrored) -->
+                <g class="arm-wrap" transform="translate(360 0) scale(-1 1)"><g class="arm arm-r">
+                  <rect x="56" y="166" width="40" height="52" rx="9" fill="url(#wHead)" stroke="#565040" stroke-width="2.5"/>
+                  <rect x="64" y="212" width="26" height="56" rx="7" fill="#c8bda2" stroke="#565040" stroke-width="2.5"/>
+                  <path d="M58 264 h38 l-6 16 h-26 z" fill="#b3a789" stroke="#565040" stroke-width="2.5"/>
+                  <rect x="63" y="280" width="6" height="12" rx="2" fill="#8f8468"/>
+                  <rect x="73" y="280" width="6" height="12" rx="2" fill="#8f8468"/>
+                  <rect x="83" y="280" width="6" height="12" rx="2" fill="#8f8468"/>
+                </g></g>
+
+                <!-- body -->
+                <g class="w-body">
+                  <rect x="98" y="150" width="164" height="172" rx="12" fill="url(#wRust)" stroke="#5f3312" stroke-width="3"/>
+                  <rect x="112" y="162" width="18" height="7" rx="3" fill="#000" opacity=".14"/>
+                  <rect x="152" y="298" width="30" height="6" rx="3" fill="#000" opacity=".18"/>
+                  <circle cx="245" cy="170" r="4" fill="#000" opacity=".12"/>
+                  <circle cx="120" cy="290" r="3.4" fill="#fff" opacity=".1"/>
+                  <line x1="98" y1="230" x2="262" y2="230" stroke="#5f3312" stroke-width="2" opacity=".55"/>
+                  <text x="180" y="214" text-anchor="middle" font-family="Chakra Petch, monospace" font-weight="700" font-size="15" letter-spacing="5" fill="#f7e9d2" opacity=".9">BNL·07</text>
+                  <g class="w-chest">
+                    <rect x="128" y="246" width="104" height="66" rx="9" fill="#7c421a" stroke="#4a270c" stroke-width="2.5"/>
+                    <rect x="136" y="254" width="88" height="50" rx="6" fill="#101d0d"/>
+                    <circle class="plant-glow" cx="180" cy="288" r="30" fill="url(#wPlant)"/>
+                    <path d="M180 298 v-18" stroke="#63d97f" stroke-width="4" stroke-linecap="round"/>
+                    <path d="M180 282 c-13 -2 -17 -13 -15 -22 c11 0 17 9 15 22 z" fill="#7ef29a"/>
+                    <path d="M180 286 c13 -2 17 -13 15 -22 c-11 0 -17 9 -15 22 z" fill="#5cd684"/>
+                  </g>
+                  <circle cx="106" cy="160" r="3" fill="#5f3312"/><circle cx="254" cy="160" r="3" fill="#5f3312"/>
+                  <circle cx="106" cy="312" r="3" fill="#5f3312"/><circle cx="254" cy="312" r="3" fill="#5f3312"/>
+                </g>
+
+                <!-- neck + head -->
+                <rect x="163" y="122" width="34" height="34" fill="#9c9480" stroke="#565040" stroke-width="2.5"/>
+                <g class="w-head">
+                  <rect x="108" y="58" width="144" height="66" rx="14" fill="url(#wHead)" stroke="#565040" stroke-width="3"/>
+                  <rect x="166" y="88" width="28" height="12" rx="4" fill="#8b8168"/>
+                  <g transform="translate(118 68) rotate(-6)">
+                    <rect x="0" y="0" width="58" height="50" rx="11" fill="#b7ad95" stroke="#565040" stroke-width="2.5"/>
+                    <circle cx="29" cy="25" r="17.5" fill="#0d1118" stroke="#2c2f28" stroke-width="2"/>
+                    <g class="pupil pupil-l">
+                      <circle cx="29" cy="25" r="7" fill="#05070c"/>
+                      <circle cx="26.5" cy="22" r="2.6" fill="#67e3ff"/>
+                    </g>
+                    <rect class="lid" x="0" y="0" width="58" height="50" rx="11" fill="#b7ad95" stroke="#565040" stroke-width="2.5"/>
+                  </g>
+                  <g transform="translate(184 68) rotate(6)">
+                    <rect x="0" y="0" width="58" height="50" rx="11" fill="#b7ad95" stroke="#565040" stroke-width="2.5"/>
+                    <circle cx="29" cy="25" r="17.5" fill="#0d1118" stroke="#2c2f28" stroke-width="2"/>
+                    <g class="pupil pupil-r">
+                      <circle cx="29" cy="25" r="7" fill="#05070c"/>
+                      <circle cx="26.5" cy="22" r="2.6" fill="#67e3ff"/>
+                    </g>
+                    <rect class="lid" x="0" y="0" width="58" height="50" rx="11" fill="#b7ad95" stroke="#565040" stroke-width="2.5"/>
+                  </g>
+                </g>
+              </g>
+
+              <!-- treads -->
+              <g class="w-treads">
+                <g class="tread">
+                  <rect x="76" y="318" width="94" height="68" rx="30" fill="url(#wTread)" stroke="#0a0d13" stroke-width="3"/>
+                  <g class="wheel" style="transform-origin:106px 352px"><circle cx="106" cy="352" r="15" fill="#242a36" stroke="#454d5e" stroke-width="3"/><path d="M106 341 v22 M95 352 h22" stroke="#454d5e" stroke-width="3" stroke-linecap="round"/></g>
+                  <g class="wheel" style="transform-origin:142px 352px"><circle cx="142" cy="352" r="15" fill="#242a36" stroke="#454d5e" stroke-width="3"/><path d="M142 341 v22 M131 352 h22" stroke="#454d5e" stroke-width="3" stroke-linecap="round"/></g>
+                  <rect x="86" y="326" width="74" height="6" rx="3" fill="#0a0d13" opacity=".5"/>
+                </g>
+                <g class="tread">
+                  <rect x="190" y="318" width="94" height="68" rx="30" fill="url(#wTread)" stroke="#0a0d13" stroke-width="3"/>
+                  <g class="wheel" style="transform-origin:220px 352px"><circle cx="220" cy="352" r="15" fill="#242a36" stroke="#454d5e" stroke-width="3"/><path d="M220 341 v22 M209 352 h22" stroke="#454d5e" stroke-width="3" stroke-linecap="round"/></g>
+                  <g class="wheel" style="transform-origin:256px 352px"><circle cx="256" cy="352" r="15" fill="#242a36" stroke="#454d5e" stroke-width="3"/><path d="M256 341 v22 M245 352 h22" stroke="#454d5e" stroke-width="3" stroke-linecap="round"/></g>
+                  <rect x="200" y="326" width="74" height="6" rx="3" fill="#0a0d13" opacity=".5"/>
+                </g>
+              </g>
+            </svg>
+            <div class="bubble" id="walleBubble">Eee-va!</div>
+          </div>
+
+          <!-- ============ EVE ============ -->
+          <div class="eve" id="eveBot" data-parallax="-26" role="button" tabindex="0" aria-label="EVE robot">
+            <svg viewBox="0 0 200 320" class="eve-svg">
+              <defs>
+                <linearGradient id="eBody" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#c7d4e2"/><stop offset=".45" stop-color="#ffffff"/><stop offset="1" stop-color="#b7c6d6"/>
+                </linearGradient>
+              </defs>
+              <g class="eve-body">
+                <path d="M100 16 C152 16 178 82 178 176 C178 266 150 304 100 304 C50 304 22 266 22 176 C22 82 48 16 100 16 Z" fill="url(#eBody)" stroke="#8fa2b5" stroke-width="2.5"/>
+                <path d="M56 62 C70 36 96 26 118 30" stroke="#fff" stroke-width="6" stroke-linecap="round" fill="none" opacity=".65"/>
+                <rect x="54" y="72" width="92" height="46" rx="23" fill="#0a1320" stroke="#1e2c3f" stroke-width="2"/>
+                <g class="eve-eyes">
+                  <rect x="74" y="85" width="15" height="21" rx="7.5" fill="#5fe3ff"/>
+                  <rect x="111" y="85" width="15" height="21" rx="7.5" fill="#5fe3ff"/>
+                </g>
+                <g class="eve-happy">
+                  <path d="M70 103 q10 -14 20 0" stroke="#5fe3ff" stroke-width="5" fill="none" stroke-linecap="round"/>
+                  <path d="M110 103 q10 -14 20 0" stroke="#5fe3ff" stroke-width="5" fill="none" stroke-linecap="round"/>
+                </g>
+                <ellipse cx="28" cy="182" rx="8" ry="21" fill="#dbe6f0" stroke="#8fa2b5" stroke-width="2"/>
+                <ellipse cx="172" cy="182" rx="8" ry="21" fill="#dbe6f0" stroke="#8fa2b5" stroke-width="2"/>
+              </g>
+            </svg>
+            <div class="bubble" id="eveBubble">Directive?</div>
+          </div>
+
+          <!-- stickers -->
+          <div class="sticker st-a113">A113</div>
+          <div class="sticker st-bnl">BNL</div>
+          <div class="sticker st-plant">
+            <svg viewBox="0 0 100 120" aria-hidden="true">
+              <path d="M30 118 v-14 q0-10 10-12 h20 q10 2 10 12 v14 z" fill="#6b4a2a" stroke="#3f2a15" stroke-width="3"/>
+              <path d="M38 92 v-6 h24 v6" fill="none" stroke="#3f2a15" stroke-width="3"/>
+              <path d="M50 92 V64" stroke="#58d37a" stroke-width="5" stroke-linecap="round"/>
+              <path d="M50 66 c-16 -3 -22 -18 -19 -31 c14 1 22 12 19 31 z" fill="#6fe892"/>
+              <path d="M50 72 c16 -3 22 -18 19 -31 c-14 1 -22 12 -19 31 z" fill="#4fcf76"/>
+              <circle class="plant-spark" cx="50" cy="50" r="7" fill="#bff3ff" opacity=".9"/>
+            </svg>
+          </div>
+          <div class="ground-shadow"></div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#fleet" aria-label="Scroll to the bot lineup">
+        <span class="cue-mouse"><i></i></span>
+        SCROLL
+      </a>
+    </section>
+
+    <!-- ================= MARQUEE ================= -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>GIVE FEEDBACK <i>★</i> YANTRIKA <i>★</i> A113 <i>★</i> EARTH NEEDS YOU <i>★</i> BNL <i>★</i> DIRECTIVE: REVIEW <i>★</i>&nbsp;</span>
+        <span>GIVE FEEDBACK <i>★</i> YANTRIKA <i>★</i> A113 <i>★</i> EARTH NEEDS YOU <i>★</i> BNL <i>★</i> DIRECTIVE: REVIEW <i>★</i>&nbsp;</span>
+      </div>
+    </div>
+
+    
+    <!-- ================= EARTH ARCHIVES (gallery) ================= -->
+    <section class="archives" id="archives">
+      <div class="container-x">
+        <div class="sec-head" data-reveal>
+          <span class="sec-label scramble" data-text="EARTH ARCHIVES">// EARTH ARCHIVES</span>
+          <h2 class="sec-title">POSTCARDS FROM <span class="outline">THE OUTPOST.</span></h2>
+          <p class="sec-sub">Recovered footage from Sector 7G — dust, robots and little green hope.</p>
+        </div>
+
+        <div class="polaroid-grid">
+          <div data-reveal>
+            <figure class="polaroid pg-wide tiltable" style="--r:-1.6deg">
+              <span class="tape" aria-hidden="true"></span>
+              <img src="images/archive-hero.jpg" alt="WALL-E archive — wide scan" loading="lazy">
+              <figcaption>ARCHIVE_000 · FIRST LIGHT</figcaption>
+            </figure>
+          </div>
+          <div data-reveal style="--d:.08s">
+            <figure class="polaroid tiltable" style="--r:-1deg">
+              <span class="tape" aria-hidden="true"></span>
+              <img src="images/archive-09.png" alt="WALL-E archive — signal found" loading="lazy">
+              <figcaption>self balancing · SIGNAL FOUND</figcaption>
+            </figure>
+          </div>
+         
+            <div data-reveal style="--d:.08s">
+            <figure class="polaroid tiltable" style="--r:-1deg">
+              <span class="tape" aria-hidden="true"></span>
+              <img src="images/archive-08.jpg" alt="WALL-E archive — signal found" loading="lazy">
+              <figcaption>self balancing · SIGNAL FOUND</figcaption>
+            </figure>
+          </div>
+           <div data-reveal style="--d:.08s">
+            <figure class="polaroid tiltable" style="--r:-1deg">
+              <span class="tape" aria-hidden="true"></span>
+              <img src="images/duck.png" alt="WALL-E archive — signal found" loading="lazy">
+              <figcaption>self balancing · SIGNAL FOUND</figcaption>
+            </figure>
+          </div> 
+           <div data-reveal style="--d:.08s">
+            <figure class="polaroid tiltable" style="--r:-1deg">
+              <span class="tape" aria-hidden="true"></span>
+              <img src="images/rcbot.png" alt="WALL-E archive — signal found" loading="lazy">
+              <figcaption>self balancing · SIGNAL FOUND</figcaption>
+            </figure>
+          </div>
+          <div data-reveal style="--d:.06s">
+            <figure class="polaroid tiltable" style="--r:1.2deg">
+              <span class="tape" aria-hidden="true"></span>
+              <img src="images/archive-01.jpg" alt="WALL-E archive — field notes" loading="lazy">
+              <figcaption>ARCHIVE_002 · FIELD NOTES</figcaption>
+            </figure>
+          </div>
+          <div data-reveal style="--d:.14s">
+            <figure class="polaroid tiltable" style="--r:-1.4deg">
+              <span class="tape" aria-hidden="true"></span>
+              <img src="images/archive-02.jpg" alt="WALL-E archive — blue unit" loading="lazy">
+              <figcaption>ARCHIVE_003 · BLUE UNIT</figcaption>
+            </figure>
+              </div>
+          <div data-reveal style="--d:.22s">
+            <figure class="polaroid tiltable" style="--r:.8deg">
+              <span class="tape" aria-hidden="true"></span>
+              <img src="images/archive-03.jpg" alt="WALL-E archive — scrapbook page" loading="lazy">
+              <figcaption>ARCHIVE_004 · SCRAPBOOK</figcaption>
+            </figure>
+          </div>
+          <div data-reveal style="--d:.1s">
+           <figure class="polaroid pg-tall tiltable" style="--r:1.8deg">
+             <span class="tape" aria-hidden="true"></span>
+             <img src="images/archive-poster.jpg" alt="WALL-E archive — poster" loading="lazy">
+             <figcaption>ARCHIVE_001 · THE POSTER</figcaption>
+           </figure>
+         </div>
+          <div data-reveal style="--d:.08s">
+            <figure class="polaroid tiltable" style="--r:-1deg">
+              <span class="tape" aria-hidden="true"></span>
+              <img src="images/archive-04.jpg" alt="WALL-E archive — signal found" loading="lazy">
+              <figcaption>ARCHIVE_005 · SIGNAL FOUND</figcaption>
+            </figure>
+          </div>
+        
+          
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= THE FLEET (bot lineup) ================= -->
+    <section class="fleet-section" id="fleet">
+      <div class="container-x">
+        <div class="sec-head" data-reveal>
+          <span class="sec-label scramble" data-text="THE FLEET">// THE FLEET</span>
+          <h2 class="sec-title">TEN BOTS. <span class="outline">TEN VERDICTS.</span></h2>
+          <p class="sec-sub">The full Yantrika lineup, station by station. Rate them all in one go.</p>
+        </div>
+
+        <div class="fleet-grid">
+          <a class="fleet-chip" href="botfeed.html#st-line-follower" data-reveal>
+            <span class="fc-top"><span class="fc-idx">ST-01</span><svg class="fc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="5" rx="1.5"/><path d="M3 17c3-6 6 6 9 0s6 6 9 0"/></svg></span>
+            <span class="fc-name">Line Follower</span>
+            <span class="fc-tag">Chases the track. Never blinks.</span>
+          </a>
+          <a class="fleet-chip" href="botfeed.html#st-soccer-bot" data-reveal style="--d:.05s">
+            <span class="fc-top"><span class="fc-idx">ST-02</span><svg class="fc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M12 8.5l3.2 2.3-1.2 3.7h-4l-1.2-3.7z"/></svg></span>
+            <span class="fc-name">Soccer Bot</span>
+            <span class="fc-tag">Tiny striker, zero mercy.</span>
+          </a>
+          <a class="fleet-chip" href="botfeed.html#st-fire-bird" data-reveal style="--d:.1s">
+            <span class="fc-top"><span class="fc-idx">ST-03</span><svg class="fc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c1.5 4-4 5.5-4 10a4 4 0 0 0 8 0c0-2-1-3.5-2-4.5.2 1.6-2 2.2-2 .5 0-2 1-4 0-6z"/></svg></span>
+            <span class="fc-name">Fire Bird</span>
+            <span class="fc-tag">Fast, loud, legendary.</span>
+          </a>
+          <a class="fleet-chip" href="botfeed.html#st-yasaka" data-reveal style="--d:.15s">
+            <span class="fc-top"><span class="fc-idx">ST-04</span><svg class="fc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.1 6.4L21 12l-6.9 2.6L12 21l-2.1-6.4L3 12l6.9-2.6z"/></svg></span>
+            <span class="fc-name">Yasaka</span>
+            <span class="fc-tag">The crowd-favourite enigma.</span>
+          </a>
+          <a class="fleet-chip" href="botfeed.html#st-duckietown" data-reveal style="--d:.2s">
+            <span class="fc-top"><span class="fc-idx">ST-05</span><svg class="fc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5a3 3 0 0 1 3 3v3h7c0 5-4 8-8 8s-7-3-7-7c0-2 1-3.4 2-4.2A3 3 0 0 1 9 5z"/><path d="M12 8h3"/></svg></span>
+            <span class="fc-name">Duckietown</span>
+            <span class="fc-tag">Self-driving ducks on duty.</span>
+          </a>
+          <a class="fleet-chip" href="botfeed.html#st-maze-solver" data-reveal style="--d:.08s">
+            <span class="fc-top"><span class="fc-idx">ST-06</span><svg class="fc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M9 4v9h11M4 15h5v5M14 13v4"/></svg></span>
+            <span class="fc-name">Maze Solver</span>
+            <span class="fc-tag">Left, right, solved.</span>
+          </a>
+          <a class="fleet-chip" href="botfeed.html#st-rc-bot" data-reveal style="--d:.13s">
+            <span class="fc-top"><span class="fc-idx">ST-07</span><svg class="fc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="10" rx="4"/><path d="M8 11v4M6 13h4"/><circle cx="15.5" cy="12" r="1.2"/><circle cx="18" cy="14.5" r="1.2"/></svg></span>
+            <span class="fc-name">RC Bot</span>
+            <span class="fc-tag">Pure stick-and-throttle joy.</span>
+          </a>
+          <a class="fleet-chip" href="botfeed.html#st-dex-arms" data-reveal style="--d:.18s">
+            <span class="fc-top"><span class="fc-idx">ST-08</span><svg class="fc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="19" r="2"/><path d="M5 19l4-7 5 3 4-6"/><circle cx="9" cy="12" r="1.4"/><circle cx="14" cy="15" r="1.4"/><circle cx="18" cy="9" r="1.8"/></svg></span>
+            <span class="fc-name">Dex Arms 3-Piece</span>
+            <span class="fc-tag">Three joints, infinite grip.</span>
+          </a>
+          <a class="fleet-chip" href="botfeed.html#st-robotic-arm" data-reveal style="--d:.23s">
+            <span class="fc-top"><span class="fc-idx">ST-09</span><svg class="fc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h10"/><path d="M9 20v-3l4-6 5 2"/><path d="M18 13l2-3M18 13l3 1"/></svg></span>
+            <span class="fc-name">Robotic Arm</span>
+            <span class="fc-tag">Pick. Place. Repeat.</span>
+          </a>
+          <a class="fleet-chip" href="botfeed.html#st-self-balancing" data-reveal style="--d:.28s">
+            <span class="fc-top"><span class="fc-idx">ST-10</span><svg class="fc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="17" r="4"/><path d="M12 13V8"/><rect x="9" y="3" width="6" height="5" rx="1.5"/><path d="M4 21.5h16"/></svg></span>
+            <span class="fc-name">Self-Balancing Bot</span>
+            <span class="fc-tag">Falls never. Tilts always.</span>
+          </a>
+        </div>
+
+        <div class="fleet-cta" data-reveal>
+          <a href="botfeed.html" class="btn btn-primary btn-big" data-magnetic>
+            START BOT FEEDBACK
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+   
+    <!-- <section class="console-section" id="console">
+      <div class="container-x">
+        <div class="sec-head" data-reveal>
+          <span class="sec-label scramble" data-text="TRANSMISSION CONSOLE">// TRANSMISSION CONSOLE</span>
+          <h2 class="sec-title">SHARE YOUR <span class="accent">FEEDBACK.</span></h2>
+          <p class="sec-sub">It takes one minute. Even a trash-compacting robot could do it.</p>
+        </div>
+
+        <div class="console-grid">
+          
+          <section class="card form-card hud tilt-safe" data-reveal>
+            <div class="hud-head" aria-hidden="true">
+              <span class="hud-dots"><i></i><i></i><i></i></span>
+              <span class="hud-title">FEEDBACK_CONSOLE v3.0</span>
+              <span class="hud-chip">SHEET 2</span>
+            </div>
+
+            <form id="feedbackForm" novalidate>
+
+              <div class="field">
+                <label for="name"><span class="field-idx">01</span> NAME <span class="req">*</span></label>
+                <input type="text" id="name" name="name" placeholder="e.g. Rahul Sharma" autocomplete="name">
+              </div>
+
+              <div class="field">
+                <label for="branch"><span class="field-idx">02</span> BRANCH <span class="req">*</span></label>
+                <select id="branch" name="branch">
+                  <option value="" disabled selected>Select your branch</option>
+                  <option value="CSE">CSE</option>
+                  <option value="COMPS">COMPS</option>
+                  <option value="ECE">EXTC</option>
+                  <option value="Mechanical">Mechanical</option>
+                  <option value="Civil">Civil</option>
+                  <option value="IT">IT</option>
+                  <option value="Other">Other</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label><span class="field-idx">03</span> RATING <span class="req">*</span></label>
+                <div class="star-row" id="starRow">
+                  <button type="button" class="star" data-value="1" aria-label="1 star">★</button>
+                  <button type="button" class="star" data-value="2" aria-label="2 stars">★</button>
+                  <button type="button" class="star" data-value="3" aria-label="3 stars">★</button>
+                  <button type="button" class="star" data-value="4" aria-label="4 stars">★</button>
+                  <button type="button" class="star" data-value="5" aria-label="5 stars">★</button>
+                  <span class="rating-text" id="ratingText">Select your rating</span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="feedback"><span class="field-idx">04</span> FEEDBACK <span class="req">*</span></label>
+                <textarea id="feedback" name="feedback" rows="4" placeholder="Write your honest feedback about the bot you liked....."></textarea>
+              </div>
+
+             
+              <ul class="alert alert-error" id="formError" hidden></ul>
+
+              <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+                <span class="btn-label">TRANSMIT FEEDBACK</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-8-8 18-2.5-7.5z"/><path d="m10.5 13.5 8-8"/></svg>
+              </button>
+            </form>
+
+            
+            <div class="alert alert-success" id="formSuccess" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
+              <span>Directive complete — your feedback reached the Axiom. Thank you!</span>
+            </div>
+          </section>
+
+          
+          <aside class="console-side">
+            <div class="card protocol-card" data-reveal style="--d:.12s">
+              <h3 class="side-title">// PROTOCOL</h3>
+              <ol class="steps">
+                <li>
+                  <span class="step-num">01</span>
+                  <div><h4>Fill the console</h4><p>Name and branch — twenty seconds flat.</p></div>
+                </li>
+                <li>
+                  <span class="step-num">02</span>
+                  <div><h4>Rate the directive</h4><p>One to five stars. Be honest, not polite.</p></div>
+                </li>
+                <li>
+                  <span class="step-num">03</span>
+                  <div><h4>Transmit</h4><p>Beamed straight to the Axiom (a.k.a. Google Sheets).</p></div>
+                </li>
+              </ol>
+            </div>
+
+            <div class="card eve-card" data-reveal style="--d:.24s">
+              <div class="eve-mini" aria-hidden="true">
+                <svg viewBox="0 0 200 320">
+                  <path d="M100 16 C152 16 178 82 178 176 C178 266 150 304 100 304 C50 304 22 266 22 176 C22 82 48 16 100 16 Z" fill="#eef4fa" stroke="#8fa2b5" stroke-width="4"/>
+                  <rect x="54" y="72" width="92" height="46" rx="23" fill="#0a1320"/>
+                  <rect x="74" y="85" width="15" height="21" rx="7.5" fill="#5fe3ff"/>
+                  <rect x="111" y="85" width="15" height="21" rx="7.5" fill="#5fe3ff"/>
+                </svg>
+              </div>
+              <div>
+                <h4>EVE is watching (kindly)</h4>
+                <p>No spam. No tracking. Just your words, stored safely on the ship.</p>
+              </div>
+            </div>
+
+            <div class="sticker-row" data-reveal style="--d:.34s" aria-hidden="true">
+              <span class="mini-sticker ms-bnl">BNL APPROVED</span>
+              <span class="mini-sticker ms-eve">EVE·CERTIFIED</span>
+              <span class="mini-sticker ms-mo">M·O STERILIZED</span>
+            </div>
+          </aside>
+        </div>
+      </div>-->
+
+      
+      <div class="mo-track" aria-hidden="true">
+        <span class="mo-label">SURFACE STERILIZED BY M·O</span>
+        <div class="mo" id="moBot">
+          <svg viewBox="0 0 130 112" class="mo-svg">
+            <rect x="56" y="10" width="18" height="12" rx="4" fill="#b9c4cf"/>
+            <rect x="28" y="22" width="74" height="64" rx="14" fill="#eef3f6" stroke="#b9c4cf" stroke-width="3"/>
+            <rect x="44" y="42" width="13" height="18" rx="6.5" fill="#10151d"/>
+            <rect x="72" y="42" width="13" height="18" rx="6.5" fill="#10151d"/>
+            <rect x="36" y="74" width="58" height="10" rx="5" fill="#c9d3dd"/>
+            <rect x="98" y="50" width="16" height="9" rx="4" fill="#c9453a"/>
+            <g class="brush" style="transform-origin:120px 66px">
+              <circle cx="120" cy="66" r="12" fill="#c9453a" stroke="#8c2119" stroke-width="3"/>
+              <path d="M120 55 v22 M109 66 h22" stroke="#8c2119" stroke-width="3" stroke-linecap="round"/>
+              <path d="M112 58 l16 16 M128 58 l-16 16" stroke="#8c2119" stroke-width="2" stroke-linecap="round"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section> 
+
+
+    <!-- ================= CTA ================= -->
+    <section class="cta">
+      <div class="container-x cta-inner" data-reveal>
+        <svg class="hh-svg" viewBox="0 0 640 300" aria-hidden="true">
+          <defs>
+            <radialGradient id="sunGrad" cx=".5" cy=".5" r=".5">
+              <stop offset="0" stop-color="#ff9c4a" stop-opacity=".95"/>
+              <stop offset=".55" stop-color="#ff9c4a" stop-opacity=".28"/>
+              <stop offset="1" stop-color="#ff9c4a" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+          <circle cx="320" cy="272" r="210" fill="url(#sunGrad)"/>
+          <circle cx="320" cy="272" r="95" fill="#ffb469" opacity=".4"/>
+          <rect x="0" y="282" width="640" height="4" fill="#241505"/>
+          <!-- WALL-E silhouette -->
+          <g fill="#0b0e15">
+            <rect x="118" y="250" width="92" height="32" rx="15"/>
+            <rect x="134" y="184" width="58" height="66" rx="7"/>
+            <rect x="132" y="156" width="62" height="27" rx="7"/>
+            <rect x="196" y="196" width="42" height="12" rx="6" transform="rotate(-10 196 196)"/>
+          </g>
+          <circle cx="150" cy="170" r="4" fill="#ffb469" opacity=".9"/>
+          <circle cx="168" cy="170" r="4" fill="#ffb469" opacity=".9"/>
+          <!-- EVE silhouette -->
+          <path d="M424 168 C456 168 468 208 468 248 C468 274 450 284 424 284 C398 284 380 274 380 248 C380 208 392 168 424 168 Z" fill="#0b0e15"/>
+          <rect x="376" y="212" width="36" height="11" rx="5.5" fill="#0b0e15" transform="rotate(8 376 212)"/>
+          <rect x="402" y="192" width="44" height="11" rx="5.5" fill="#ffb469" opacity=".85"/>
+          <!-- spark -->
+          <circle class="hh-glow" cx="321" cy="196" r="16" fill="#bff3ff" opacity=".18"/>
+          <path class="hh-spark" d="M321 178l5 13 13 5-13 5-5 13-5-13-13-5 13-5z" fill="#bff3ff"/>
+        </svg>
+        
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="parade" aria-hidden="true">
+      <div class="parade-track">
+        <div class="parade-group">
+          <svg class="mini mini-walle" viewBox="0 0 360 412"><rect x="76" y="318" width="94" height="68" rx="30" fill="#2a3140"/><rect x="190" y="318" width="94" height="68" rx="30" fill="#2a3140"/><rect x="98" y="150" width="164" height="172" rx="12" fill="#c26f2a"/><rect x="108" y="58" width="144" height="66" rx="14" fill="#c9bfa8"/><rect x="120" y="70" width="56" height="48" rx="11" fill="#8f8672"/><rect x="184" y="70" width="56" height="48" rx="11" fill="#8f8672"/><circle cx="148" cy="94" r="15" fill="#0d1118"/><circle cx="212" cy="94" r="15" fill="#0d1118"/><circle cx="152" cy="98" r="5" fill="#67e3ff"/><circle cx="216" cy="98" r="5" fill="#67e3ff"/></svg>
+          <svg class="mini mini-eve" viewBox="0 0 200 320"><path d="M100 16 C152 16 178 82 178 176 C178 266 150 304 100 304 C50 304 22 266 22 176 C22 82 48 16 100 16 Z" fill="#eef4fa"/><rect x="54" y="72" width="92" height="46" rx="23" fill="#0a1320"/><rect x="74" y="85" width="15" height="21" rx="7.5" fill="#5fe3ff"/><rect x="111" y="85" width="15" height="21" rx="7.5" fill="#5fe3ff"/></svg>
+          <svg class="mini mini-mo" viewBox="0 0 130 112"><rect x="28" y="22" width="74" height="64" rx="14" fill="#eef3f6"/><rect x="44" y="42" width="13" height="18" rx="6.5" fill="#10151d"/><rect x="72" y="42" width="13" height="18" rx="6.5" fill="#10151d"/><circle cx="120" cy="66" r="12" fill="#c9453a"/></svg>
+          <svg class="mini mini-plant" viewBox="0 0 100 120"><path d="M30 118 v-14 q0-10 10-12 h20 q10 2 10 12 v14 z" fill="#6b4a2a"/><path d="M50 92 V64" stroke="#58d37a" stroke-width="5" stroke-linecap="round"/><path d="M50 66 c-16 -3 -22 -18 -19 -31 c14 1 22 12 19 31 z" fill="#6fe892"/><path d="M50 72 c16 -3 22 -18 19 -31 c-14 1 -22 12 -19 31 z" fill="#4fcf76"/></svg>
+          <svg class="mini mini-hal" viewBox="0 0 90 56"><ellipse cx="42" cy="34" rx="24" ry="13" fill="#6b4526"/><circle cx="68" cy="28" r="9" fill="#6b4526"/><path d="M72 22 l8 -9 M66 20 l4 -11" stroke="#6b4526" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+        </div>
+        <div class="parade-group">
+          <svg class="mini mini-walle" viewBox="0 0 360 412"><rect x="76" y="318" width="94" height="68" rx="30" fill="#2a3140"/><rect x="190" y="318" width="94" height="68" rx="30" fill="#2a3140"/><rect x="98" y="150" width="164" height="172" rx="12" fill="#c26f2a"/><rect x="108" y="58" width="144" height="66" rx="14" fill="#c9bfa8"/><rect x="120" y="70" width="56" height="48" rx="11" fill="#8f8672"/><rect x="184" y="70" width="56" height="48" rx="11" fill="#8f8672"/><circle cx="148" cy="94" r="15" fill="#0d1118"/><circle cx="212" cy="94" r="15" fill="#0d1118"/><circle cx="152" cy="98" r="5" fill="#67e3ff"/><circle cx="216" cy="98" r="5" fill="#67e3ff"/></svg>
+          <svg class="mini mini-eve" viewBox="0 0 200 320"><path d="M100 16 C152 16 178 82 178 176 C178 266 150 304 100 304 C50 304 22 266 22 176 C22 82 48 16 100 16 Z" fill="#eef4fa"/><rect x="54" y="72" width="92" height="46" rx="23" fill="#0a1320"/><rect x="74" y="85" width="15" height="21" rx="7.5" fill="#5fe3ff"/><rect x="111" y="85" width="15" height="21" rx="7.5" fill="#5fe3ff"/></svg>
+          <svg class="mini mini-mo" viewBox="0 0 130 112"><rect x="28" y="22" width="74" height="64" rx="14" fill="#eef3f6"/><rect x="44" y="42" width="13" height="18" rx="6.5" fill="#10151d"/><rect x="72" y="42" width="13" height="18" rx="6.5" fill="#10151d"/><circle cx="120" cy="66" r="12" fill="#c9453a"/></svg>
+          <svg class="mini mini-plant" viewBox="0 0 100 120"><path d="M30 118 v-14 q0-10 10-12 h20 q10 2 10 12 v14 z" fill="#6b4a2a"/><path d="M50 92 V64" stroke="#58d37a" stroke-width="5" stroke-linecap="round"/><path d="M50 66 c-16 -3 -22 -18 -19 -31 c14 1 22 12 19 31 z" fill="#6fe892"/><path d="M50 72 c16 -3 22 -18 19 -31 c-14 1 -22 12 -19 31 z" fill="#4fcf76"/></svg>
+          <svg class="mini mini-hal" viewBox="0 0 90 56"><ellipse cx="42" cy="34" rx="24" ry="13" fill="#6b4526"/><circle cx="68" cy="28" r="9" fill="#6b4526"/><path d="M72 22 l8 -9 M66 20 l4 -11" stroke="#6b4526" stroke-width="2.5" fill="none" stroke-linecap="round"/></svg>
+        </div>
+      </div>
+    </div>
+    <p class="foot-line">Created By Yantrika --- A Robotics Community In VCET</p>
+    <p class="foot-sub">Made with <span class="heart">♥</span> on Earth · Hand-holding robots since 2008 · <span class="a113">A113</span></p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+  <script src="theme.js" defer></script>
+</body>
+</html>

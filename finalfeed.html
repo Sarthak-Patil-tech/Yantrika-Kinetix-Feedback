@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yantrika · Final Overall Feedback</title>
+  <meta name="description" content="One last verdict — your overall experience with the Yantrika robotics showcase.">
+  <link rel="icon" href="images/whitelogo.jpg">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    /* safety net: if theme.js ever fails, still reveal the page */
+    setTimeout(function () {
+      document.body.classList.add("booted");
+      var p = document.getElementById("preloader");
+      if (p) p.remove();
+    }, 4000);
+  </script>
+</head>
+<body class="page-finalfeed">
+
+  <!-- ================= BOOT / PRELOADER ================= -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="pre-inner">
+       <img src="images/best.png" alt="" style="height: 250px; width: 250px;">
+      <div class="pre-logo">YANTRIKA</div>
+      <div class="pre-track"><div class="pre-fill" id="preFill"></div></div>
+      <div class="pre-meta"><span id="prePct">0%</span><span id="preLog">BNL OS v8.1 — booting…</span></div>
+    </div>
+  </div>
+
+  <!-- scroll charge bar -->
+  <div class="charge-bar" aria-hidden="true"><div class="charge-fill" id="chargeFill"></div></div>
+
+  <!-- custom cursor -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= TOP BAR ================= -->
+  <header class="topbar" id="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html" data-magnetic>
+        <span class="brand-eye" aria-hidden="true">
+           <img src="images/best.png" alt="" >
+        </span>
+        <span class="brand-text">YANTRIKA</span>
+        <span class="brand-tag">BNL·EDU</span>
+      </a>
+      <nav class="topnav">
+        <a class="nav-link" href="botfeed.html" data-magnetic>
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>
+          BOT STATIONS
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ================= MINI HERO ================= -->
+    <!-- <section class="hero hero-mini" id="top">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="stars stars-1"></div>
+        <div class="stars stars-2"></div>
+        <div class="hero-glow hero-glow-a"></div>
+        <div class="hero-glow hero-glow-b"></div>
+        <div class="hero-horizon"></div>
+        <svg class="sparkle sp-1" viewBox="0 0 24 24"><path d="M12 0l2.4 9.6L24 12l-9.6 2.4L12 24l-2.4-9.6L0 12l9.6-2.4z" fill="#9df1ff"/></svg>
+        <svg class="sparkle sp-3" viewBox="0 0 24 24"><path d="M12 0l2.4 9.6L24 12l-9.6 2.4L12 24l-2.4-9.6L0 12l9.6-2.4z" fill="#f2ecdd"/></svg>
+        <i class="dust d-1"></i><i class="dust d-4"></i><i class="dust d-5"></i>
+      </div>
+
+      <div class="hero-grid container-x">
+        <div class="hero-copy">
+          <span class="badge scramble" data-text="FINAL TRANSMISSION">// FINAL TRANSMISSION</span>
+          <h1 class="hero-title">
+            <span class="line" style="--i:0"><span class="l-inner">ONE LAST</span></span>
+            <span class="line" style="--i:1"><span class="l-inner accent">VERDICT.</span></span>
+          </h1>
+          <p class="hero-text boot-fade" style="--bd:.55s">
+            The fleet has been rated. Now the whole show — the bots, the crew,
+            the chaos — one overall verdict. This lands in
+            <strong>Sheet 2 · General feedback</strong>, then the Axiom says thank you.
+          </p>
+          <div class="hero-meta boot-fade" style="--bd:.7s">
+            <span class="chip"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h7l-1 8 11-13h-7z" fill="currentColor"/></svg>Sheet 2 · General feedback</span>
+            <span class="chip"><svg viewBox="0 0 24 24"><path d="M21.8 10A10 10 0 1 1 17 3.34" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><path d="m9 11 3 3L22 4" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>Ends at the thank-you page</span>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- ================= FINAL CONSOLE ================= -->
+    <section class="console-section" id="console">
+      <div class="container-x">
+        <div class="sec-head" data-reveal>
+          <span class="sec-label scramble" data-text="OVERALL VERDICT">// OVERALL VERDICT</span>
+          <h2 class="sec-title">FINAL <span class="accent">FEEDBACK.</span></h2>
+          <p class="sec-sub">Thirty seconds. Be honest, not polite.</p>
+        </div>
+
+        <div class="console-grid">
+          <!-- form card -->
+          <section class="card form-card hud" data-reveal>
+            <div class="hud-head" aria-hidden="true">
+              <span class="hud-dots"><i></i><i></i><i></i></span>
+              <span class="hud-title">FINAL_CONSOLE v3.0</span>
+              <span class="hud-chip">SHEET 2</span>
+            </div>
+
+            <form id="finalForm" novalidate>
+
+              <div class="ident-grid">
+                <div class="field">
+                  <label for="fName"><span class="field-idx">01</span> NAME <span class="req">*</span></label>
+                  <input type="text" id="fName" name="name" placeholder="e.g. Rahul Sharma" autocomplete="name">
+                </div>
+                <div class="field">
+                  <label for="fBranch"><span class="field-idx">02</span> BRANCH <span class="req">*</span></label>
+                  <select id="fBranch" name="branch">
+                    <option value="" disabled selected>Select your branch</option>
+                    <option value="CSE">CSE</option>
+                    <option value="COMPS">COMPS</option>
+                    <option value="ECE">EXTC</option>
+                    <option value="Mechanical">Mechanical</option>
+                    <option value="Civil">Civil</option>
+                    <option value="IT">IT</option>
+                    <option value="Other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label><span class="field-idx">03</span> OVERALL RATING <span class="req">*</span></label>
+                <div class="star-row" id="fStarRow">
+                  <button type="button" class="star" data-value="1" aria-label="1 star">★</button>
+                  <button type="button" class="star" data-value="2" aria-label="2 stars">★</button>
+                  <button type="button" class="star" data-value="3" aria-label="3 stars">★</button>
+                  <button type="button" class="star" data-value="4" aria-label="4 stars">★</button>
+                  <button type="button" class="star" data-value="5" aria-label="5 stars">★</button>
+                  <span class="rating-text">Select your rating</span>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="fFeedback"><span class="field-idx">04</span> FEEDBACK <span class="req">*</span></label>
+                <textarea id="fFeedback" name="feedback" rows="4" placeholder="Your overall experience — bots, people, organisation, everything…"></textarea>
+              </div>
+
+              <!-- Validation errors appear here -->
+              <ul class="alert alert-error" id="finalError" hidden></ul>
+
+              <button type="submit" class="btn btn-primary btn-block" id="finalSubmit">
+                <span class="btn-label">TRANSMIT FINAL VERDICT</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="m3 11 18-8-8 18-2.5-7.5z"/><path d="m10.5 13.5 8-8"/></svg>
+              </button>
+            </form>
+
+            <!-- Success message; then auto-routes to the thank-you page -->
+            <div class="alert alert-success" id="finalSuccess" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>
+              <span>Directive complete — verdict stored in Sheet 2. Routing to the thank-you page…</span>
+            </div>
+          </section>
+
+          <!-- side panel -->
+          <aside class="console-side">
+            <div class="card protocol-card" data-reveal style="--d:.12s">
+              <h3 class="side-title">// PROTOCOL</h3>
+              <ol class="steps">
+                <li>
+                  <span class="step-num">01</span>
+                  <div><h4>Verdict</h4><p>One overall rating for the whole showcase.</p></div>
+                </li>
+                <li>
+                  <span class="step-num">02</span>
+                  <div><h4>Transmit</h4><p>Beamed to Sheet 2 · General feedback.</p></div>
+                </li>
+                <li>
+                  <span class="step-num">03</span>
+                  <div><h4>Thank-you page</h4><p>WALL-E insists on thanking you personally.</p></div>
+                </li>
+              </ol>
+            </div>
+
+            <div class="card eve-card" data-reveal style="--d:.24s">
+              <div class="eve-mini" aria-hidden="true">
+                <svg viewBox="0 0 200 320">
+                  <path d="M100 16 C152 16 178 82 178 176 C178 266 150 304 100 304 C50 304 22 266 22 176 C22 82 48 16 100 16 Z" fill="#eef4fa" stroke="#8fa2b5" stroke-width="4"/>
+                  <rect x="54" y="72" width="92" height="46" rx="23" fill="#0a1320"/>
+                  <rect x="74" y="85" width="15" height="21" rx="7.5" fill="#5fe3ff"/>
+                  <rect x="111" y="85" width="15" height="21" rx="7.5" fill="#5fe3ff"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Almost done, human</h4>
+                <p>After this transmission EVE will walk you to the thank-you page.</p>
+              </div>
+            </div>
+
+            <div class="sticker-row" data-reveal style="--d:.34s" aria-hidden="true">
+              <span class="mini-sticker ms-bnl">BNL APPROVED</span>
+              <span class="mini-sticker ms-eve">EVE·CERTIFIED</span>
+              <span class="mini-sticker ms-mo">M·O STERILIZED</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <p class="foot-line">Yantrika - a robotics community in VCET college </p>
+    <p class="foot-sub">Made with <span class="heart">♥</span> on Earth · Hand-holding robots since 2019 · <span class="a113">A113</span></p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js" defer></script>
+  <script src="theme.js" defer></script>
+</body>
+</html>

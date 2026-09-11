@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yantrika · Thank You — Directive Complete</title>
+  <meta name="description" content="Thank you for feeding the Axiom. WALL-E approves.">
+  <link rel="icon" href="images/whitelogo.jpg">
+  <link rel="stylesheet" href="fonts.css">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    /* safety net: if theme.js ever fails, still reveal the page */
+    setTimeout(function () {
+      document.body.classList.add("booted");
+      var p = document.getElementById("preloader");
+      if (p) p.remove();
+    }, 4000);
+  </script>
+</head>
+<body class="page-thankyou">
+
+  <!-- ================= BOOT / PRELOADER ================= -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="pre-inner">
+       <img src="images/best.png" alt="" style="height: 250px; width: 250px;">
+      <div class="pre-logo">YANTRIKA</div>
+      <div class="pre-track"><div class="pre-fill" id="preFill"></div></div>
+      <div class="pre-meta"><span id="prePct">0%</span><span id="preLog">BNL OS v8.1 — booting…</span></div>
+    </div>
+  </div>
+
+  <!-- scroll charge bar -->
+  <div class="charge-bar" aria-hidden="true"><div class="charge-fill" id="chargeFill"></div></div>
+
+  <!-- custom cursor -->
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ================= TOP BAR ================= -->
+  <header class="topbar" id="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html" data-magnetic>
+        <span class="brand-eye" aria-hidden="true">
+           <img src="images/best.png" alt="" >
+        </span>
+        <span class="brand-text">YANTRIKA</span>
+        <span class="brand-tag">BNL·EDU</span>
+      </a>
+      <nav class="topnav">
+        <a class="nav-link" href="reviews.html" data-magnetic>
+          SEE REVIEWS
+          <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="ty-section">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="stars stars-1"></div>
+        <div class="stars stars-2"></div>
+        <div class="hero-glow hero-glow-a"></div>
+        <div class="hero-glow hero-glow-b"></div>
+        <div class="hero-horizon"></div>
+        <svg class="sparkle sp-1" viewBox="0 0 24 24"><path d="M12 0l2.4 9.6L24 12l-9.6 2.4L12 24l-2.4-9.6L0 12l9.6-2.4z" fill="#9df1ff"/></svg>
+        <svg class="sparkle sp-2" viewBox="0 0 24 24"><path d="M12 0l2.4 9.6L24 12l-9.6 2.4L12 24l-2.4-9.6L0 12l9.6-2.4z" fill="#ffd66e"/></svg>
+        <svg class="sparkle sp-3" viewBox="0 0 24 24"><path d="M12 0l2.4 9.6L24 12l-9.6 2.4L12 24l-2.4-9.6L0 12l9.6-2.4z" fill="#f2ecdd"/></svg>
+        <i class="dust d-1"></i><i class="dust d-2"></i><i class="dust d-3"></i>
+        <i class="dust d-4"></i><i class="dust d-5"></i><i class="dust d-6"></i>
+      </div>
+
+      <div class="container-x">
+        <span class="badge scramble" data-text="DIRECTIVE COMPLETE">// DIRECTIVE COMPLETE</span>
+        <h1 class="ty-title">
+          THANK YOU,<br><span class="accent">HUMAN.</span>
+        </h1>
+        <p class="ty-text">
+          Your bot reports and final verdict are safely stored aboard the Axiom.
+          <strong>WALL-E</strong> is doing a little tread-dance, <strong>EVE</strong> logged a happy
+          arc, and M·O is sterilizing the console in your honour.
+        </p>
+        <div class="ty-cta">
+          <a href="index.html" class="btn btn-primary btn-big" data-magnetic>
+            BACK TO BASE
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </a>
+          <a href="reviews.html" class="btn btn-ghost btn-big" data-magnetic>READ REVIEWS</a>
+          <a href="botfeed.html" class="btn btn-ghost btn-big" data-magnetic>RATE AGAIN</a>
+        </div>
+
+        <!-- robot celebration stage -->
+        <div class="ty-stage" aria-hidden="true">
+          <div class="stage-glow"></div>
+
+          <!-- WALL-E -->
+          <div class="walle" id="walleBot" role="button" tabindex="0" aria-label="WALL-E robot">
+            <svg viewBox="0 0 360 412" class="walle-svg">
+              <defs>
+                <linearGradient id="wRust" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#e0913f"/><stop offset=".55" stop-color="#c26f2a"/><stop offset="1" stop-color="#96511b"/>
+                </linearGradient>
+                <linearGradient id="wHead" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#ddd3bd"/><stop offset="1" stop-color="#a99e86"/>
+                </linearGradient>
+                <linearGradient id="wTread" x1="0" y1="0" x2="0" y2="1">
+                  <stop offset="0" stop-color="#3a4150"/><stop offset="1" stop-color="#171b24"/>
+                </linearGradient>
+                <radialGradient id="wPlant">
+                  <stop offset="0" stop-color="#8df0b5" stop-opacity=".55"/><stop offset="1" stop-color="#8df0b5" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+
+              <g class="w-bot">
+                <g class="arm-wrap"><g class="arm arm-l">
+                  <rect x="56" y="166" width="40" height="52" rx="9" fill="url(#wHead)" stroke="#565040" stroke-width="2.5"/>
+                  <rect x="64" y="212" width="26" height="56" rx="7" fill="#c8bda2" stroke="#565040" stroke-width="2.5"/>
+                  <path d="M58 264 h38 l-6 16 h-26 z" fill="#b3a789" stroke="#565040" stroke-width="2.5"/>
+                </g></g>
+                <g class="arm-wrap" transform="translate(360 0) scale(-1 1)"><g class="arm arm-r">
+                  <rect x="56" y="166" width="40" height="52" rx="9" fill="url(#wHead)" stroke="#565040" stroke-width="2.5"/>
+                  <rect x="64" y="212" width="26" height="56" rx="7" fill="#c8bda2" stroke="#565040" stroke-width="2.5"/>
+                  <path d="M58 264 h38 l-6 16 h-26 z" fill="#b3a789" stroke="#565040" stroke-width="2.5"/>
+                </g></g>
+
+                <g class="w-body">
+                  <rect x="98" y="150" width="164" height="172" rx="12" fill="url(#wRust)" stroke="#5f3312" stroke-width="3"/>
+                  <line x1="98" y1="230" x2="262" y2="230" stroke="#5f3312" stroke-width="2" opacity=".55"/>
+                  <text x="180" y="214" text-anchor="middle" font-family="Chakra Petch, monospace" font-weight="700" font-size="15" letter-spacing="5" fill="#f7e9d2" opacity=".9">BNL·07</text>
+                  <g class="w-chest">
+                    <rect x="128" y="246" width="104" height="66" rx="9" fill="#7c421a" stroke="#4a270c" stroke-width="2.5"/>
+                    <rect x="136" y="254" width="88" height="50" rx="6" fill="#101d0d"/>
+                    <circle class="plant-glow" cx="180" cy="288" r="30" fill="url(#wPlant)"/>
+                    <path d="M180 298 v-18" stroke="#63d97f" stroke-width="4" stroke-linecap="round"/>
+                    <path d="M180 282 c-13 -2 -17 -13 -15 -22 c11 0 17 9 15 22 z" fill="#7ef29a"/>
+                    <path d="M180 286 c13 -2 17 -13 15 -22 c-11 0 -17 9 -15 22 z" fill="#5cd684"/>
+                  </g>
+                </g>
+
+                <rect x="163" y="122" width="34" height="34" fill="#9c9480" stroke="#565040" stroke-width="2.5"/>
+                <g class="w-head">
+                  <rect x="108" y="58" width="144" height="66" rx="14" fill="url(#wHead)" stroke="#565040" stroke-width="3"/>
+                  <g transform="translate(118 68) rotate(-6)">
+                    <rect x="0" y="0" width="58" height="50" rx="11" fill="#b7ad95" stroke="#565040" stroke-width="2.5"/>
+                    <circle cx="29" cy="25" r="17.5" fill="#0d1118" stroke="#2c2f28" stroke-width="2"/>
+                    <g class="pupil pupil-l">
+                      <circle cx="29" cy="25" r="7" fill="#05070c"/>
+                      <circle cx="26.5" cy="22" r="2.6" fill="#67e3ff"/>
+                    </g>
+                    <rect class="lid" x="0" y="0" width="58" height="50" rx="11" fill="#b7ad95" stroke="#565040" stroke-width="2.5"/>
+                  </g>
+                  <g transform="translate(184 68) rotate(6)">
+                    <rect x="0" y="0" width="58" height="50" rx="11" fill="#b7ad95" stroke="#565040" stroke-width="2.5"/>
+                    <circle cx="29" cy="25" r="17.5" fill="#0d1118" stroke="#2c2f28" stroke-width="2"/>
+                    <g class="pupil pupil-r">
+                      <circle cx="29" cy="25" r="7" fill="#05070c"/>
+                      <circle cx="26.5" cy="22" r="2.6" fill="#67e3ff"/>
+                    </g>
+                    <rect class="lid" x="0" y="0" width="58" height="50" rx="11" fill="#b7ad95" stroke="#565040" stroke-width="2.5"/>
+                  </g>
+                </g>
+              </g>
+
+              <g class="w-treads">
+                <g class="tread">
+                  <rect x="76" y="318" width="94" height="68" rx="30" fill="url(#wTread)" stroke="#0a0d13" stroke-width="3"/>
+                  <g class="wheel" style="transform-origin:106px 352px"><circle cx="106" cy="352" r="15" fill="#242a36" stroke="#454d5e" stroke-width="3"/><path d="M106 341 v22 M95 352 h22" stroke="#454d5e" stroke-width="3" stroke-linecap="round"/></g>
+                  <g class="wheel" style="transform-origin:142px 352px"><circle cx="142" cy="352" r="15" fill="#242a36" stroke="#454d5e" stroke-width="3"/><path d="M142 341 v22 M131 352 h22" stroke="#454d5e" stroke-width="3" stroke-linecap="round"/></g>
+                </g>
+                <g class="tread">
+                  <rect x="190" y="318" width="94" height="68" rx="30" fill="url(#wTread)" stroke="#0a0d13" stroke-width="3"/>
+                  <g class="wheel" style="transform-origin:220px 352px"><circle cx="220" cy="352" r="15" fill="#242a36" stroke="#454d5e" stroke-width="3"/><path d="M220 341 v22 M209 352 h22" stroke="#454d5e" stroke-width="3" stroke-linecap="round"/></g>
+                  <g class="wheel" style="transform-origin:256px 352px"><circle cx="256" cy="352" r="15" fill="#242a36" stroke="#454d5e" stroke-width="3"/><path d="M256 341 v22 M245 352 h22" stroke="#454d5e" stroke-width="3" stroke-linecap="round"/></g>
+                </g>
+              </g>
+            </svg>
+            <div class="bubble" id="walleBubble">Ta-da!</div>
+          </div>
+
+          <!-- EVE -->
+          <div class="eve" id="eveBot" role="button" tabindex="0" aria-label="EVE robot">
+            <svg viewBox="0 0 200 320" class="eve-svg">
+              <defs>
+                <linearGradient id="eBody" x1="0" y1="0" x2="1" y2="0">
+                  <stop offset="0" stop-color="#c7d4e2"/><stop offset=".45" stop-color="#ffffff"/><stop offset="1" stop-color="#b7c6d6"/>
+                </linearGradient>
+              </defs>
+              <g class="eve-body">
+                <path d="M100 16 C152 16 178 82 178 176 C178 266 150 304 100 304 C50 304 22 266 22 176 C22 82 48 16 100 16 Z" fill="url(#eBody)" stroke="#8fa2b5" stroke-width="2.5"/>
+                <path d="M56 62 C70 36 96 26 118 30" stroke="#fff" stroke-width="6" stroke-linecap="round" fill="none" opacity=".65"/>
+                <rect x="54" y="72" width="92" height="46" rx="23" fill="#0a1320" stroke="#1e2c3f" stroke-width="2"/>
+                <g class="eve-eyes">
+                  <rect x="74" y="85" width="15" height="21" rx="7.5" fill="#5fe3ff"/>
+                  <rect x="111" y="85" width="15" height="21" rx="7.5" fill="#5fe3ff"/>
+                </g>
+                <g class="eve-happy">
+                  <path d="M70 103 q10 -14 20 0" stroke="#5fe3ff" stroke-width="5" fill="none" stroke-linecap="round"/>
+                  <path d="M110 103 q10 -14 20 0" stroke="#5fe3ff" stroke-width="5" fill="none" stroke-linecap="round"/>
+                </g>
+                <ellipse cx="28" cy="182" rx="8" ry="21" fill="#dbe6f0" stroke="#8fa2b5" stroke-width="2"/>
+                <ellipse cx="172" cy="182" rx="8" ry="21" fill="#dbe6f0" stroke="#8fa2b5" stroke-width="2"/>
+              </g>
+            </svg>
+            <div class="bubble" id="eveBubble">Positive.</div>
+          </div>
+
+          <div class="ground-shadow"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="parade" aria-hidden="true">
+      <div class="parade-track">
+        <div class="parade-group">
+          <svg class="mini mini-walle" viewBox="0 0 360 412"><rect x="76" y="318" width="94" height="68" rx="30" fill="#2a3140"/><rect x="190" y="318" width="94" height="68" rx="30" fill="#2a3140"/><rect x="98" y="150" width="164" height="172" rx="12" fill="#c26f2a"/><rect x="108" y="58" width="144" height="66" rx="14" fill="#c9bfa8"/><rect x="120" y="70" width="56" height="48" rx="11" fill="#8f8672"/><rect x="184" y="70" width="56" height="48" rx="11" fill="#8f8672"/><circle cx="148" cy="94" r="15" fill="#0d1118"/><circle cx="212" cy="94" r="15" fill="#0d1118"/><circle cx="152" cy="98" r="5" fill="#67e3ff"/><circle cx="216" cy="98" r="5" fill="#67e3ff"/></svg>
+          <svg class="mini mini-eve" viewBox="0 0 200 320"><path d="M100 16 C152 16 178 82 178 176 C178 266 150 304 100 304 C50 304 22 266 22 176 C22 82 48 16 100 16 Z" fill="#eef4fa"/><rect x="54" y="72" width="92" height="46" rx="23" fill="#0a1320"/><rect x="74" y="85" width="15" height="21" rx="7.5" fill="#5fe3ff"/><rect x="111" y="85" width="15" height="21" rx="7.5" fill="#5fe3ff"/></svg>
+          <svg class="mini mini-mo" viewBox="0 0 130 112"><rect x="28" y="22" width="74" height="64" rx="14" fill="#eef3f6"/><rect x="44" y="42" width="13" height="18" rx="6.5" fill="#10151d"/><rect x="72" y="42" width="13" height="18" rx="6.5" fill="#10151d"/><circle cx="120" cy="66" r="12" fill="#c9453a"/></svg>
+          <svg class="mini mini-plant" viewBox="0 0 100 120"><path d="M30 118 v-14 q0-10 10-12 h20 q10 2 10 12 v14 z" fill="#6b4a2a"/><path d="M50 92 V64" stroke="#58d37a" stroke-width="5" stroke-linecap="round"/><path d="M50 66 c-16 -3 -22 -18 -19 -31 c14 1 22 12 19 31 z" fill="#6fe892"/><path d="M50 72 c16 -3 22 -18 19 -31 c-14 0 -17 9 -15 22 z" fill="#4fcf76"/></svg>
+        </div>
+        <div class="parade-group">
+          <svg class="mini mini-walle" viewBox="0 0 360 412"><rect x="76" y="318" width="94" height="68" rx="30" fill="#2a3140"/><rect x="190" y="318" width="94" height="68" rx="30" fill="#2a3140"/><rect x="98" y="150" width="164" height="172" rx="12" fill="#c26f2a"/><rect x="108" y="58" width="144" height="66" rx="14" fill="#c9bfa8"/><rect x="120" y="70" width="56" height="48" rx="11" fill="#8f8672"/><rect x="184" y="70" width="56" height="48" rx="11" fill="#8f8672"/><circle cx="148" cy="94" r="15" fill="#0d1118"/><circle cx="212" cy="94" r="15" fill="#0d1118"/><circle cx="152" cy="98" r="5" fill="#67e3ff"/><circle cx="216" cy="98" r="5" fill="#67e3ff"/></svg>
+          <svg class="mini mini-eve" viewBox="0 0 200 320"><path d="M100 16 C152 16 178 82 178 176 C178 266 150 304 100 304 C50 304 22 266 22 176 C22 82 48 16 100 16 Z" fill="#eef4fa"/><rect x="54" y="72" width="92" height="46" rx="23" fill="#0a1320"/><rect x="74" y="85" width="15" height="21" rx="7.5" fill="#5fe3ff"/><rect x="111" y="85" width="15" height="21" rx="7.5" fill="#5fe3ff"/></svg>
+          <svg class="mini mini-mo" viewBox="0 0 130 112"><rect x="28" y="22" width="74" height="64" rx="14" fill="#eef3f6"/><rect x="44" y="42" width="13" height="18" rx="6.5" fill="#10151d"/><rect x="72" y="42" width="13" height="18" rx="6.5" fill="#10151d"/><circle cx="120" cy="66" r="12" fill="#c9453a"/></svg>
+          <svg class="mini mini-plant" viewBox="0 0 100 120"><path d="M30 118 v-14 q0-10 10-12 h20 q10 2 10 12 v14 z" fill="#6b4a2a"/><path d="M50 92 V64" stroke="#58d37a" stroke-width="5" stroke-linecap="round"/><path d="M50 66 c-16 -3 -22 -18 -19 -31 c14 1 22 12 19 31 z" fill="#6fe892"/><path d="M50 72 c16 -3 22 -18 19 -31 c-14 0 -17 9 -15 22 z" fill="#4fcf76"/></svg>
+        </div>
+      </div>
+    </div>
+    <p class="foot-line">Created By Yantrika --- A Robotics Community In VCET</p>
+    <p class="foot-sub">Made with <span class="heart">♥</span> on Earth · Hand-holding robots since 2008 · <span class="a113">A113</span></p>
+  </footer>
+
+  <button class="to-top" id="toTop" aria-label="Back to top">
+    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script>
+    /* celebration: star confetti + robot chatter once the boot finishes */
+    setTimeout(function () {
+      window.dispatchEvent(new CustomEvent("cv:success"));
+      var b = document.getElementById("walleBubble");
+      if (b) {
+        b.textContent = "Thank you!";
+        b.classList.add("show");
+        setTimeout(function () { b.classList.remove("show"); }, 2200);
+      }
+      var e = document.getElementById("eveBot");
+      if (e) {
+        e.classList.add("happy");
+        setTimeout(function () { e.classList.remove("happy"); }, 2200);
+      }
+    }, 2100);
+    setTimeout(function () { window.dispatchEvent(new CustomEvent("cv:success")); }, 3400);
+  </script>
+
+  <script src="script.js" defer></script>
+  <script src="theme.js" defer></script>
+</body>
+</html>
