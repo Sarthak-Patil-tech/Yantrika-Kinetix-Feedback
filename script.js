@@ -10,8 +10,8 @@
 /* =========================================================
    CONFIGURATION — EDIT THESE TWO LINES (see README step 5-6)
    ========================================================= */
-const APPS_SCRIPT_URL = "null";   // ← paste your Google Apps Script Web App URL
-const REVIEWS_PASSWORD = "null";    // ← change the reviews page password
+const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwcRl05y356F5uqOYB5sEfTHguoH-hVGeC1CbDgbkbVYo-jHzgbOMtcjlpxzefEEFnb/exec";   // ← paste your Google Apps Script Web App URL
+const REVIEWS_PASSWORD = "yantrika26";    // ← change the reviews page password
 
 /* ---------------------------------------------------------
    HONEST SECURITY WARNING (please read)
